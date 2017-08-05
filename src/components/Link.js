@@ -20,4 +20,10 @@ class Link extends Component {
 
 }
 
-export default Link
+export default createFragmentContainer(Link, graphql`
+  fragment Link_link on Link {
+    id
+    description
+    url
+  }
+`)
