@@ -15,7 +15,7 @@ const mutation = graphql`
         createdAt
         url
         description
-        postById {
+        postedBy {
           id
           name
         }
@@ -25,11 +25,11 @@ const mutation = graphql`
 `
 
 // 3
-export default (postById, description, url, callback) => {
+export default (postedBy, description, url, callback) => {
   // 4
   const variables = {
     input: {
-      postById,
+      postedBy,
       description,
       url,
       clientMutationId: ""

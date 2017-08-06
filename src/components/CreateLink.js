@@ -41,8 +41,8 @@ class CreateLink extends Component {
   }
 
   _createLink = () => {
-    const postById = localStorage.getItem(GC_USER_ID)
-    if (!postById) {
+    const postedById = localStorage.getItem(GC_USER_ID)
+    if (!postedById) {
       console.error('No user logged in')
       return
     }
@@ -50,7 +50,7 @@ class CreateLink extends Component {
       description,
       url,
     } = this.state
-    CreateLinkMutation(postById, description, url, () => this.props.history.push('/') )
+    CreateLinkMutation(postedById, description, url, () => this.props.history.push('/') )
   }
 
 }
