@@ -35,6 +35,7 @@
     "react-dom": "^15.6.1",
     "react-error-overlay": "^1.0.9",
     "react-relay": "^1.1.0",
+    "react-router-dom": "^4.1.2",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.3",
     "url-loader": "0.5.9",
@@ -46,6 +47,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "compile-graphql": "relay-compiler --src ./src/ --schema schema-full.graphql",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
