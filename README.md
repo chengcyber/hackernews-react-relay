@@ -24,3 +24,17 @@ graphcool endpoints
 ```
 npm run compile-graphql
 ```
+
+# Screenshots
+
+index page:
+
+![Index](/screenshots/index.png)
+
+create a new link:
+
+![CreateLink](/screenshots/createLink.png)
+
+login page:
+
+![login](/screenshots/login.png)
